@@ -1,0 +1,5 @@
+IMAGE                                                                     CREATED          CREATED BY                                                                                                 SIZE      COMMENT
+sha256:fd33c74b39702b0586b5ef3b57b2a8dab2b8470d9a3886e95c5dee663544fa1e   11 minutes ago   /bin/sh -c #(nop)  CMD ["/server"]                                                                         0B        
+sha256:6fa22109778ed7ee3b8573298a5b1cf465bf85f15594b4c7f31beb9822a22f75   11 minutes ago   /bin/sh -c #(nop) COPY file:40c20abc160183073922c943679356d4ee107e9855daa8b255cd36468c8ef523 in /server    18.1MB    
+sha256:6dbb9cc54074106d46d4ccb330f2a40a682d49dda5f4844962b7dce9fe44aaec   2 weeks ago      /bin/sh -c #(nop)  CMD ["/bin/sh"]                                                                         0B        
+<missing>                                                                 2 weeks ago      /bin/sh -c #(nop) ADD file:8ec69d882e7f29f0652d537557160e638168550f738d0d49f90a7ef96bf31787 in /           5.61MB    
