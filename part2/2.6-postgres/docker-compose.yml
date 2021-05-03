@@ -6,6 +6,12 @@ services:
                 environment:
                         POSTGRES_PASSWORD: test
                 container_name: postgres
+        frontend:
+                build: frontend/.
+                ports:
+                        - 5000:5000
+                depends_on:
+                        - backend
         backend:
                 build: ./backend/
                 environment:
@@ -14,6 +20,7 @@ services:
                         POSTGRES_PASSWORD: test
                         POSTGRES_DATABASE: postgres
                         REDIS_HOST: redis
+                        REQUEST_ORIGIN: http://localhost:5000
                 ports:
                         - 8080:8080
                 depends_on:
