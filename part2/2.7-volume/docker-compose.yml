@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+        frontend:
+                build: ./frontend/
+                ports:
+                        - 3000:3000
+
+        backend:
+                build: ./backend/
+                ports:
+                        - 5000:5000
+                volumes:
+                        - type: volume
+                          source: training_data
+                          target: /src/model
+
+        training:
+                build: ./training/
+                volumes:
+                        - type: volume
+                          source: training_data
+                          target: /src/model
+volumes:
+        training_data:
